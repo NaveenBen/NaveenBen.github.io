@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #08090a;
+}
+#particles-js {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+}
+.mainc {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  border-radius: 28px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: fit-content;
+  width: 320px;
+  background-color: transparent;
+  padding-top: 40px;
+  position: relative;
+  top: 10%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.ih img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 2px solid cyan;
+}
+.ih img:hover {
+  box-shadow: none;
+}
+#linkz a {
+  text-decoration: none;
+  color: cyan;
+  padding: 10px;
+}
+.sm {
+  display: flex;
+  justify-content: center;
+}
+#linkz img {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 0px;
+}
+#th {
+  text-align: center;
+  padding: 0px;
+  text-align: center;
+  background-color: transparent;
+  color: aqua;
+  font-family: "Montserrat", sans-serif;
+}
+.dc {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+@media only screen and (max-width: 600px) {
+  .card:hover {
+    /* box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.6); */
+    box-shadow: 1px 1px 2rem cyan;
+    border: 1.5px solid cyan;
+  }
+}

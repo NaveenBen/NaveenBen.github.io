@@ -16,12 +16,15 @@ body {
 .card {
   border-radius: 28px;
   margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   height: fit-content;
-  width: 320px;
-  background-color: rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.795);
   padding-top: 40px;
+  border: 1px solid cyan;
+  /* box-shadow: 0px 0px 10px 0.1px rgba(255, 255, 255, 0.336); */
+
   position: relative;
   top: 10%;
   padding-bottom: 30px;
@@ -34,9 +37,6 @@ body {
   height: 250px;
   border: 2px solid cyan;
 }
-.ih img:hover {
-  box-shadow: none;
-}
 #linkz a {
   text-decoration: none;
   color: cyan;
@@ -44,6 +44,7 @@ body {
 }
 .card:hover {
   border: 1px solid cyan;
+  background-color: rgba(0, 0, 0, 0.479);
 }
 .sm {
   display: flex;
@@ -68,13 +69,24 @@ body {
   position: absolute;
   width: 100vw;
 }
+
 @media only screen and (max-width: 600px) {
   .card:hover {
     /* box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.6); */
-    box-shadow: 1px 1px 2rem cyan;
+    /* box-shadow: 1px 1px 2rem cyan; */
     border: 1.5px solid cyan;
+    box-shadow: 0 28px 16px -22px cyan;
+  }
+  .img-shadow-1 {
+    -webkit-box-shadow: 0 28px 16px -26px cyan;
+    -moz-box-shadow: 0 28px 16px -26px cyan;
+    box-shadow: 0 28px 16px -22px cyan;
   }
   #th {
     font-size: 3vmax;
+  }
+  .card {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
